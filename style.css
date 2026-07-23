@@ -630,4 +630,36 @@ footer{
     .faq-item p{
         font-size:15px;
     }
+}.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    color:#D4AF37;
+    font-size:20px;
+    font-weight:600;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    padding:0;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.faq-answer p{
+    color:#ddd;
+    padding-top:15px;
+    line-height:1.8;
+}
+
+.faq-item.active .faq-answer{
+    max-height:200px;
+}
+
+.faq-item.active span{
+    transform:rotate(45deg);
 }
