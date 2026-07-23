@@ -914,4 +914,22 @@ footer{
         max-width:300px;
     }
 
+}@media(max-width:768px){
+
+    section.about{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding:50px 5%;
+    }
+
+    .about-text,
+    .about-image{
+        width:100%;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
 }
