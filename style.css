@@ -850,8 +850,11 @@ footer{
 
     .hero{
         flex-direction:column;
-        text-align:center;
+        min-height:auto;
         padding:50px 5%;
+        background-size:cover;
+        background-position:center;
+        text-align:center;
     }
 
     .hero-text{
@@ -859,7 +862,7 @@ footer{
     }
 
     .hero-text h1{
-        font-size:35px;
+        font-size:32px;
     }
 
     .hero-text p{
@@ -872,7 +875,7 @@ footer{
     }
 
     .hero-image img{
-        max-width:350px;
+        max-width:300px;
     }
 
 }
