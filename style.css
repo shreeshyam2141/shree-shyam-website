@@ -74,6 +74,35 @@ nav a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}.hero-text{
+    width:45%;
+}
+
+.hero-text h1{
+    font-size:58px;
+    color:#fff;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#e5e7eb;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    width:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:850px;
+    height:auto;
 }
 
 /* Button */
