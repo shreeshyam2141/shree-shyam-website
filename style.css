@@ -690,25 +690,7 @@ footer{
     .about-text,
     .about-image{
         width:100%;
-        .products,
-.gallery,
-.contact,
-.reviews,
-.quote,
-.why,
-.faq{
-    padding:50px 5%;
-}
-
-.products h2,
-.gallery h2,
-.contact h2,
-.reviews h2,
-.quote h2,
-.why h2,
-.faq h2{
-    font-size:32px;
-}
+    
     }
 
     .features{
