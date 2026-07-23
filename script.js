@@ -24,7 +24,7 @@ function topFunction() {
     });
 }
 
-// Preloader
+// preloader
 window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     if (preloader) {
