@@ -655,6 +655,8 @@ footer{
         min-height:auto;
         padding:50px 5%;
         text-align:center;
+        background-size:cover;
+        background-position:center;
     }
 
     .hero-text{
@@ -662,11 +664,11 @@ footer{
     }
 
     .hero-text h1{
-        font-size:32px;
+        font-size:28px;
     }
 
     .hero-text p{
-        font-size:16px;
+        font-size:15px;
     }
 
     .hero-image{
