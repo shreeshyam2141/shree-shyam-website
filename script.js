@@ -30,4 +30,20 @@ window.addEventListener("load", function () {
     if (preloader) {
         preloader.style.display = "none";
     }
+}const faqs = document.querySelectorAll(".faq-item");
+
+faqs.forEach(faq => {
+
+    const btn = faq.querySelector(".faq-question");
+
+    btn.addEventListener("click", () => {
+
+        faq.classList.toggle("active");
+
+        const icon = btn.querySelector("span");
+
+        icon.textContent = faq.classList.contains("active") ? "−" : "+";
+
+    });
+
 });
