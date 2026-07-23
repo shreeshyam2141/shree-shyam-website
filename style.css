@@ -379,7 +379,7 @@ nav a:hover{
     grid-template-columns:  repeat(3,  1fr);
     gap: 25px;
     align-items: center;
-    justify-items: conter;
+    justify-items: center;
 }
 
 .gallery-box img{
