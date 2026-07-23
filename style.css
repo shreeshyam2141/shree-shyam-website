@@ -839,4 +839,94 @@ footer{
         grid-template-columns:1fr;
     }
 
+}/* MOBILE FINAL FIX */
+
+@media(max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* Hero Banner */
+    .hero{
+        min-height:auto;
+        padding:30px 5%;
+        gap:20px;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .hero-text p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .hero-image{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .hero-image img{
+        width:80%;
+        max-width:230px;
+    }
+
+
+    /* All Section Size */
+    .about,
+    .products,
+    .gallery,
+    .contact,
+    .reviews,
+    .quote,
+    .why,
+    .faq,
+    .cta{
+        padding:50px 5%;
+    }
+
+
+    /* Heading Size */
+    .about-text h2,
+    .products h2,
+    .gallery h2,
+    .contact h2,
+    .reviews h2,
+    .quote h2,
+    .why h2,
+    .faq h2,
+    .cta h2{
+        font-size:30px;
+    }
+
+
+    /* Paragraph */
+    .about-text p,
+    .card p,
+    .review-card p,
+    .why-card p,
+    .faq-item p{
+        font-size:15px;
+    }
+
+
+    /* Gallery */
+    .gallery-box{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-box img{
+        height:280px;
+    }
+
+
+    /* Product Cards */
+    .card{
+        width:100%;
+        max-width:300px;
+    }
+
 }
