@@ -845,4 +845,34 @@ footer{
     background:#08192d;
     color:#fff;
     transform:translateY(-3px);
+    
+}@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 5%;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:35px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-image{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .hero-image img{
+        max-width:350px;
+    }
+
 }
