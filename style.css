@@ -178,13 +178,13 @@ nav a:hover{
 .about-text h2{
     font-size:42px;
     margin-bottom:20px;
-    color:#0f172a;
+    color:#D4AF37;
 }
 
 .about-text p{
     font-size:18px;
     line-height:1.8;
-    color:#555555;
+    color:#dddddd;
     margin-bottom:25px;
 }
 
@@ -690,6 +690,25 @@ footer{
     .about-text,
     .about-image{
         width:100%;
+        .products,
+.gallery,
+.contact,
+.reviews,
+.quote,
+.why,
+.faq{
+    padding:50px 5%;
+}
+
+.products h2,
+.gallery h2,
+.contact h2,
+.reviews h2,
+.quote h2,
+.why h2,
+.faq h2{
+    font-size:32px;
+}
     }
 
     .features{
