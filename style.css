@@ -274,54 +274,8 @@ nav a:hover{
 .card p{
     font-size:16px;
     color:#dddddd;
-    line-
-
-/* =========================
-   PRODUCTS SECTION
-========================= */
-
-.products{
-    padding:90px 8%;
-    background:#08111f;
-    text-align:center;
-}
-
-.products h2{
-    font-size:42px;
-    margin-bottom:45px;
-    color:#00c8ff;
-}
-
-.product-box{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.card{
-    width:280px;
-    background:#132238;
-    padding:35px 25px;
-    border-radius:18px;
-    transition:.3s;
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(0,200,255,.6);
-}
-
-.card h3{
-    color:#00c8ff;
-    font-size:28px;
-    margin-bottom:15px;
-}
-
-.card p{
-    color:#ddd;
     line-height:1.6;
+
 }/* =========================
    GALLERY
 ========================= */
