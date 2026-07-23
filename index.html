@@ -224,28 +224,35 @@
 
 <section class="quote">
 
-    <h2>Request a Free Quote</h2>
+    <h2>Get Your Free Quote</h2>
 
-    <form class="quote-form">
+    <p>Tell us your requirements and we'll provide the best price for your customized water bottle labels.</p>
 
-        <input type="text" placeholder="Your Name" required>
+    <form class="quote-form" id="quoteForm">
 
-        <input type="tel" placeholder="Mobile Number" required>
+        <input type="text" id="name" placeholder="Full Name" required>
 
-        <input type="email" placeholder="Email Address">
+        <input type="tel" id="mobile" placeholder="Mobile Number" required>
 
-        <select>
+        <input type="email" id="email" placeholder="Email Address">
+
+        <input type="text" id="business" placeholder="Business / Hotel Name">
+
+        <select id="size">
+            <option value="">Select Bottle Size</option>
             <option>250 ML</option>
             <option>500 ML</option>
             <option>1 Litre</option>
         </select>
 
-        <input type="number" placeholder="Quantity">
+        <input type="number" id="quantity" placeholder="Quantity">
 
-        <textarea placeholder="Write Your Requirement"></textarea>
+        <input type="text" id="location" placeholder="Delivery Location">
+
+        <textarea id="message" placeholder="Write Your Requirement"></textarea>
 
         <button type="submit" class="btn">
-            Send Request
+            Send Request on WhatsApp
         </button>
 
     </form>
