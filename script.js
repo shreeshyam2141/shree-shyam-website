@@ -46,4 +46,56 @@ faqs.forEach(faq => {
 
     });
 
-});
+});// ===========================
+// QUOTE FORM TO WHATSAPP
+// ===========================
+
+const quoteForm = document.getElementById("quoteForm");
+
+if (quoteForm) {
+
+    quoteForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const mobile = document.getElementById("mobile").value;
+        const email = document.getElementById("email").value;
+        const business = document.getElementById("business").value;
+        const size = document.getElementById("size").value;
+        const quantity = document.getElementById("quantity").value;
+        const location = document.getElementById("location").value;
+        const message = document.getElementById("message").value;
+
+        if(name === "" || mobile === ""){
+            alert("Please fill Name and Mobile Number.");
+            return;
+        }
+
+        const text =
+`📩 *NEW QUOTE REQUEST*
+
+👤 Name: ${name}
+📞 Mobile: ${mobile}
+📧 Email: ${email}
+
+🏢 Business: ${business}
+
+🥤 Bottle Size: ${size}
+📦 Quantity: ${quantity}
+
+📍 Delivery: ${location}
+
+📝 Requirement:
+${message}
+
+-------------------------
+Shree Shyam Customized Water Bottle Label`;
+
+        const url = `https://wa.me/917709953326?text=${encodeURIComponent(text)}`;
+
+        window.open(url,"_blank");
+
+    });
+
+}
