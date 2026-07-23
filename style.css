@@ -720,4 +720,36 @@ footer{
         width:110px;
     }
 
+}.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:420px;
+    height:auto;
+    filter:drop-shadow(0 20px 35px rgba(0,0,0,.35));
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
 }
