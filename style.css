@@ -572,17 +572,23 @@ section{
     transition:.35s;
 
     backdrop-filter:blur(12px);
+    
+    padding:25px;
+    
+    text-align:center;
+    
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
 
 }
 
 .product-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
-    border-color:var(--gold);
+    border-color:rgba(212,175,55,.55);
 
-    box-shadow:0 25px 50px rgba(0,0,0,.45);
-
+    box-shadow:0 25px 60px rgba(0,0,0,.55);
+    0 0 30px rgba(212,175,55,.20)
 }
 
 .product-card img{
