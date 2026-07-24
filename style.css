@@ -1167,4 +1167,55 @@ section{
 
     line-height:1.7;
 
+}/* Premium Footer */
+
+footer{
+
+    margin-top:80px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.03);
+
+    border-top:1px solid rgba(212,175,55,.20);
+
+    backdrop-filter:blur(12px);
+
+}
+
+
+footer h3{
+
+    color:var(--gold);
+
+    font-size:1.6rem;
+
+    margin-bottom:15px;
+
+}
+
+
+footer p{
+
+    color:var(--text);
+
+    max-width:800px;
+
+    margin:12px auto;
+
+    line-height:1.7;
+
+}
+
+
+footer p:last-child{
+
+    font-size:.9rem;
+
+    opacity:.7;
+
+    margin-top:25px;
+
 }
