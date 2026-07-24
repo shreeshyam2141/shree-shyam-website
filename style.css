@@ -1111,4 +1111,60 @@ section{
 
     cursor:pointer;
 
+}/* FAQ Premium Design */
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+.faq-item{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(12px);
+
+    transition:.3s ease;
+
+}
+
+
+.faq-item:hover{
+
+    border-color:rgba(212,175,55,.55);
+
+    transform:translateY(-5px);
+
+}
+
+
+.faq-item h3{
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+
+    font-size:1.2rem;
+
+}
+
+
+.faq-item p{
+
+    color:var(--text);
+
+    line-height:1.7;
+
 }
