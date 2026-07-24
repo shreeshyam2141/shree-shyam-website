@@ -329,7 +329,7 @@ section{
 
     background:
     linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-    url("images/hero-banner.jpg");
+    url("hero-banner.jpg");
 
     background-size:cover;
 
