@@ -1,101 +1,90 @@
-// Mobile Menu
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("nav");
-
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+// AOS
+AOS.init({
+    duration: 1000,
+    once: true
 });
 
-// Back to Top Button
+// Back To Top Button
+
 const topBtn = document.getElementById("topBtn");
 
-window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
     }
-};
 
-function topFunction() {
+});
+
+topBtn.onclick = () => {
+
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
-}
 
-// preloader
-window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
-    if (preloader) {
-        preloader.style.display = "none";
-    }
-}const faqs = document.querySelectorAll(".faq-item");
+};
 
-faqs.forEach(faq => {
+// Smooth Scroll
 
-    const btn = faq.querySelector(".faq-question");
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-    btn.addEventListener("click", () => {
-
-        faq.classList.toggle("active");
-
-        const icon = btn.querySelector("span");
-
-        icon.textContent = faq.classList.contains("active") ? "−" : "+";
-
-    });
-
-});// ===========================
-// QUOTE FORM TO WHATSAPP
-// ===========================
-
-const quoteForm = document.getElementById("quoteForm");
-
-if (quoteForm) {
-
-    quoteForm.addEventListener("submit", function(e){
+    link.addEventListener("click", function(e) {
 
         e.preventDefault();
 
-        const name = document.getElementById("name").value;
-        const mobile = document.getElementById("mobile").value;
-        const email = document.getElementById("email").value;
-        const business = document.getElementById("business").value;
-        const size = document.getElementById("size").value;
-        const quantity = document.getElementById("quantity").value;
-        const location = document.getElementById("location").value;
-        const message = document.getElementById("message").value;
+        const target = document.querySelector(this.getAttribute("href"));
 
-        if(name === "" || mobile === ""){
-            alert("Please fill Name and Mobile Number.");
-            return;
+        if (target) {
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
         }
-
-        const text =
-`📩 *NEW QUOTE REQUEST*
-
-👤 Name: ${name}
-📞 Mobile: ${mobile}
-📧 Email: ${email}
-
-🏢 Business: ${business}
-
-🥤 Bottle Size: ${size}
-📦 Quantity: ${quantity}
-
-📍 Delivery: ${location}
-
-📝 Requirement:
-${message}
-
--------------------------
-Shree Shyam Customized Water Bottle Label`;
-
-        const url = `https://wa.me/917709953326?text=${encodeURIComponent(text)}`;
-
-        window.open(url,"_blank");
 
     });
 
-}
+});
+
+// Navbar Shadow
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        header.style.background = "rgba(0,0,0,.95)";
+        header.style.boxShadow = "0 10px 30px rgba(0,0,0,.4)";
+
+    } else {
+
+        header.style.background = "rgba(8,8,8,.72)";
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+// Gallery Hover Effect
+
+document.querySelectorAll(".gallery-grid img").forEach(img => {
+
+    img.addEventListener("mouseenter", () => {
+
+        img.style.transform = "scale(1.05)";
+
+    });
+
+    img.addEventListener("mouseleave", () => {
+
+        img.style.transform = "scale(1)";
+
+    });
+
+});
