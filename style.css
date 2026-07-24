@@ -204,4 +204,221 @@ section{
 
     margin:auto;
 
+}/*==================================================
+                HEADER / NAVBAR
+==================================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:20px 10%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(8,8,8,.72);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(212,175,55,.12);
+
+    z-index:1000;
+
+    transition:.35s ease;
+
+}
+
+.logo{
+
+    font-size:1.7rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+}
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.navbar a{
+
+    color:#fff;
+
+    font-weight:500;
+
+    font-size:1rem;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:.35s;
+
+}
+
+.navbar a:hover{
+
+    color:var(--gold);
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}
+
+/*==================================================
+                  HERO SECTION
+==================================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding-top:150px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:4.4rem;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.hero-content h1 span{
+
+    color:var(--gold);
+
+}
+
+.hero-content p{
+
+    color:var(--text);
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    max-width:620px;
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    max-width:470px;
+
+    filter:
+    drop-shadow(0 0 25px rgba(212,175,55,.20))
+    drop-shadow(0 0 60px rgba(212,175,55,.12));
+
+    animation:floatBottle 4s ease-in-out infinite;
+
+}
+
+@keyframes floatBottle{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
 }
