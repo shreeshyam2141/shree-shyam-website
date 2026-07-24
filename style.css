@@ -1298,9 +1298,9 @@ footer p:last-child{
 
         gap:40px;
         
-        background-position:center top;
+        background-position:center center;
 
-        background-size:auto 100%;
+        background-size:cover;
 
         background-repeat:no-repeat;
 
