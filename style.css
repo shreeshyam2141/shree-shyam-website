@@ -979,4 +979,37 @@ section{
 
     transform:scale(1.05);
 
+}/* Product Info Badge */
+
+.product-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin:20px 0;
+
+}
+
+
+.product-info span{
+
+    background:rgba(212,175,55,.12);
+
+    color:var(--gold);
+
+    border:1px solid rgba(212,175,55,.35);
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
 }
