@@ -1297,6 +1297,12 @@ footer p:last-child{
         padding-top:120px;
 
         gap:40px;
+        
+        background-position:center top;
+
+        background-size:auto 100%;
+
+        background-repeat:no-repeat;
 
     }
 
