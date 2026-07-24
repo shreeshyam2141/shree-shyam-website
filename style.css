@@ -777,4 +777,139 @@ section{
 
     margin:0 25px 30px;
 
+}/*================ HERO UPGRADE ================*/
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-bg{
+
+    position:absolute;
+    inset:0;
+    z-index:-1;
+
+}
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    animation:floatGlow 8s ease-in-out infinite;
+
+}
+
+.circle1{
+
+    width:320px;
+    height:320px;
+
+    background:rgba(212,175,55,.20);
+
+    top:-100px;
+    left:-80px;
+
+}
+
+.circle2{
+
+    width:260px;
+    height:260px;
+
+    background:rgba(212,175,55,.12);
+
+    right:0;
+    top:120px;
+
+}
+
+.circle3{
+
+    width:240px;
+    height:240px;
+
+    background:rgba(255,255,255,.05);
+
+    bottom:-80px;
+    left:45%;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    margin:20px 0;
+
+    padding:10px 22px;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:50px;
+
+    color:var(--gold);
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(12px);
+
+    font-size:.95rem;
+
+    letter-spacing:1px;
+
+}
+
+.hero-stats{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-top:45px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-stats div{
+
+    min-width:130px;
+
+}
+
+.hero-stats h3{
+
+    font-size:2rem;
+
+    color:var(--gold);
+
+}
+
+.hero-stats span{
+
+    color:var(--text);
+
+    font-size:.9rem;
+
+}
+
+@keyframes floatGlow{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-35px);
+
+    }
+
 }
