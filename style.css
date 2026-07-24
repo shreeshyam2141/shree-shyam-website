@@ -1013,4 +1013,50 @@ section{
 
     font-weight:600;
 
+}/* Contact Premium Design */
+
+.contact-box{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(212,175,55,.20);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45),
+    0 0 35px rgba(212,175,55,.12);
+
+}
+
+
+.contact-box h3{
+
+    color:var(--gold);
+
+    font-size:1.8rem;
+
+    margin-bottom:25px;
+
+}
+
+
+.contact-box p{
+
+    margin:12px 0;
+
+    color:var(--text);
+
+    font-size:1.05rem;
+
 }
