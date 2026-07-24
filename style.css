@@ -1289,7 +1289,8 @@ footer p:last-child{
 @media(max-width:768px){
 
     .hero{
-
+        min-height:700px;
+        
         flex-direction:column;
 
         text-align:center;
@@ -1298,9 +1299,9 @@ footer p:last-child{
 
         gap:40px;
         
-        background-position:center;
+        background-position:center top;
 
-        background-size:100% 100%;
+        background-size:contain;
 
         background-repeat:no-repeat;
 
