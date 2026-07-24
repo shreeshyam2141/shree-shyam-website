@@ -123,7 +123,7 @@ a{
 
     padding:15px 34px;
 
-    background:var(--gold);
+    background:linear-gradient(135deg,#d4af37,#f5d76e);
 
     color:#000;
 
@@ -131,22 +131,23 @@ a{
 
     border-radius:50px;
 
-    transition:var(--transition);
+    transition:.35s ease;
 
-    border:2px solid var(--gold);
+    border:2px solid rgba(212,175,55,.8)
 
     box-shadow:
     0 0 25px rgba(212,175,55,.35);
+    cursor:pointer;
 
 }
 
 .btn:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-5px);
 
-    background:transparent;
+     box-shadow:0 0 40px rgba(212,175,55,.65);
 
-    color:var(--gold);
+    background:linear-gradient(135deg,#f5d76e,#d4af37);
 
 }
 
